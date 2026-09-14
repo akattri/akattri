@@ -1,110 +1,111 @@
 # Akash
 
-> Computer Science undergraduate focused on systems programming, concurrency, machine learning, and open-source software.
+<p>
+  <strong>CS Undergraduate (AI & ML)</strong> · SRM Institute of Science & Technology · <em>Class of 2029</em><br>
+  <code>systems programming</code> · <code>concurrency</code> · <code>unix internals</code> · <code>algorithms</code> · <code>applied ml</code>
+</p>
 
-I am a second-year undergraduate pursuing a B.Tech in Computer Science and Engineering (Specialization in AI & ML) at SRM Institute of Science and Technology, Kattankulathur (graduating 2029).
+<p>
+  <a href="https://akattri.github.io"><strong>Website</strong></a> &nbsp;•&nbsp;
+  <a href="https://github.com/akattri"><strong>GitHub</strong></a> &nbsp;•&nbsp;
+  <a href="https://www.linkedin.com/in/akattri"><strong>LinkedIn</strong></a> &nbsp;•&nbsp;
+  <a href="mailto:akashattri62@gmail.com"><strong>Email</strong></a>
+</p>
 
-My primary interest lies in understanding software systems beneath their abstractions—transitioning from high-level frameworks down to operating system interfaces, concurrency primitives, memory layouts, and hardware telemetry. I use Linux as my daily driver and build software to explore how core computer science fundamentals work in practice.
-
----
-
-## What I'm Working On
-
-- **Systems Programming in C**: Exploring POSIX system calls, process lifecycles, memory layout, file descriptors, and I/O redirection.
-- **Concurrency & Synchronization**: Multithreaded programming with POSIX threads (`pthreads`), mutual exclusion locks, condition variables, and synchronization protocols.
-- **Core Algorithms & Data Structures**: Deepening algorithmic problem-solving, asymptotic analysis, and foundational data structures through university-level curricula.
-- **Systems for ML & Applied NLP**: Empirical hardware profiling (GPU/CPU utilization, VRAM footprint, power telemetry) during local model execution, and domain-specific text classification pipelines.
-- **Linux & Unix Internals**: Deepening practical understanding of IPC, signals, process groups, virtual memory, and standard Unix tooling.
+I am an undergraduate focused on understanding software systems beneath their abstractions. Rather than chasing ephemeral frameworks, I spend my time writing C, studying operating system primitives, experimenting with concurrency, and observing how machine learning workloads behave on physical hardware.
 
 ---
 
-## Selected Projects
+### `/now`
 
-### [seashell](https://github.com/akattri/seashell)
-*C99 • POSIX System Calls • Linux • Make*
-- A compact, educational Unix shell implementing process lifecycle management (`fork`, `execvp`, `waitpid`), file descriptor redirection (`open`, `dup2`, `close`), and inter-process communication through unidirectional pipelines (`pipe`).
-- Handles terminal signals (`SIGINT`, `sigaction`), implements shell builtins (`cd`, `pwd`, `export`), and manages background jobs with non-blocking zombie process reaping (`WNOHANG`).
-- Includes an automated test suite with 29 behavioral test cases.
-- **Core concepts**: Process creation, virtual address space duplication, file descriptor tables, IPC, terminal control.
+A real-time snapshot of current technical focus:
 
-### [thread-safe-queue](https://github.com/akattri/thread-safe-queue)
-*C • POSIX Threads (pthreads) • Concurrency • Synchronization*
-- A concurrent First-In, First-Out (FIFO) queue implemented from scratch in C supporting multiple producer and consumer threads without data races.
-- Uses `pthread_mutex_t` for mutual exclusion and `pthread_cond_t` for event signaling, ensuring consumers sleep when the queue is empty rather than burning CPU cycles in busy-polling loops.
-- Features a graceful shutdown signaling protocol and a multi-threaded test driver with checksum and count verification.
-- **Core concepts**: Mutual exclusion, condition variable wait loops (spurious wakeup handling), thread lifecycle, memory safety in shared state.
-
-### [llm-resource-mon](https://github.com/akattri/llm-resource-mon)
-*Python • Linux Diagnostics • Telemetry • Matplotlib*
-- A lightweight hardware telemetry tool to monitor GPU compute utilization, VRAM allocation, on-board GPU power draw (`nvidia-smi`), and CPU load (`psutil`) during local LLM inference via Ollama.
-- Logs empirical metrics to CSV at fixed sampling intervals, calculates summary statistics, estimates approximate GPU energy consumption (Joules/Watt-hours), and generates telemetry plots.
-- **Core concepts**: Empirical hardware profiling, cold-start vs. warm-start memory caching behavior, Green AI / operational energy measurement.
-
-### [github-issue-classifier](https://github.com/akattri/github-issue-classifier)
-*Python • Scikit-learn • NLTK • REST APIs*
-- A machine-learning pipeline designed to automate issue triage on GitHub repositories by classifying issues into security and non-security categories based on title and body text.
-- Covers data collection via GitHub REST API, text preprocessing with NLTK, TF-IDF n-gram feature extraction, and Multinomial Naive Bayes classification with stratified train-test evaluation.
-- **Core concepts**: Text preprocessing in developer domains, class-imbalance evaluation, NLP feature representation.
-
-### [Archon](https://github.com/akattri/Archon)
-*JavaScript • Chrome Extensions API (Manifest V3) • OAuth 2.0*
-- A browser productivity dashboard extension that consolidates bookmarks, local task management, and Google Calendar agenda synchronization via OAuth 2.0.
-- **Core concepts**: Non-persistent background service workers, browser security models, asynchronous client-side storage.
-
-### [akattri.github.io](https://akattri.github.io)
-*Hugo • Markdown • Git*
-- Personal academic portfolio and technical notebook documenting coursework, systems engineering takeaways, and project design notes.
-- **Source**: [akattri/akattri.github.io](https://github.com/akattri/akattri.github.io)
+| Domain | Target | Focus & Primitives | State |
+| :--- | :--- | :--- | :--- |
+| **Systems** | [`seashell`](https://github.com/akattri/seashell) | Unix shell in C99 · `fork()`/`execvp()` · pipelines · redirection · signal handling | `● Active` |
+| **Concurrency** | [`thread-safe-queue`](https://github.com/akattri/thread-safe-queue) | POSIX threads (`pthreads`) · `mutex` · condition variables · race prevention | `● Active` |
+| **OOP & Testing** | Univ. of Helsinki Java | Software construction · data structures · unit testing with JUnit | `● Active` |
+| **Algorithms** | Princeton Algorithms I & II | Sedgewick & Wayne · asymptotic analysis · balanced trees · graphs | `○ Queued` |
+| **Systems for ML** | [`llm-resource-mon`](https://github.com/akattri/llm-resource-mon) | Linux hardware telemetry · `nvidia-smi` + `psutil` · VRAM / power profiling | `● Refining` |
 
 ---
 
-## Coursework & Foundations
+### `/code`
 
-### Completed
-- **Harvard University — CS50x: Introduction to Computer Science**
-  - C programming, manual memory management (`malloc`, `free`), pointers, data structures (linked lists, hash tables, tries), algorithmic complexity ($\mathcal{O}$, $\Omega$, $\Theta$), sorting/search, SQL, and foundational web concepts.
-- **Linux Essentials**
-  - Linux operating system architecture, file system hierarchy standard (FHS), permissions and security, process management, and shell scripting.
+#### Primary Systems Work
 
-### In Progress
-- **University of Helsinki — Java Programming I & II (MOOC.fi)**
-  - Object-oriented programming, data structures, modular software design, interfaces, generics, and automated unit testing with JUnit.
-- **SRM Institute of Science and Technology — B.Tech CSE (Year 2, Semester 3)**
-  - Core curriculum in data structures, object-oriented paradigms, and discrete mathematics.
+##### [`seashell`](https://github.com/akattri/seashell) — Educational Unix Shell
+`C99` · `POSIX System Calls` · `Process Management` · `IPC` · `Make`
 
-### Planned
-- **Princeton University — Algorithms, Part I & II** (*Robert Sedgewick, Kevin Wayne / Coursera*)
-  - Elementary sorts, balanced search trees (Red-Black BSTs), priority queues, graph algorithms (DFS, BFS, MST, shortest paths), string sorts, and intractability.
-- **Harvard University — CS50 AI / CS50 Web**
-  - Heuristic search, probabilistic models, machine learning fundamentals, and distributed web architectures.
-- **Computer Systems & Operating Systems**
-  - Self-directed exploration of virtual memory, paging, kernel-user mode transitions, and CPU scheduling.
+An educational Unix shell built in C99 to understand operating system primitives from the ground up:
+- **Process Orchestration**: Process creation and lifecycle tracking via `fork()`, `execvp()`, and `waitpid()`.
+- **I/O Redirection & IPC**: File descriptor duplication via `dup2()` (`<`, `>`, `>>`) and unidirectional inter-process communication pipelines via `pipe()`.
+- **Signals & Job Control**: Signal routing (`SIGINT`, `sigaction`), builtin execution in the parent process (`cd`, `pwd`, `export`), and non-blocking background zombie reaping (`WNOHANG`).
+- **Validation**: 29-case automated behavioral test suite (`tests/test_shell.sh`).
+- *Why it exists*: To understand how Unix processes, file descriptor tables, and terminal control operate directly against kernel syscalls rather than libc wrappers.
+
+##### [`thread-safe-queue`](https://github.com/akattri/thread-safe-queue) — Concurrent FIFO Queue
+`C` · `POSIX Threads (pthreads)` · `Mutual Exclusion` · `Condition Variables`
+
+A concurrent First-In, First-Out queue in C supporting multiple simultaneous producer and consumer threads:
+- **Synchronization Mechanics**: Guards shared mutable state (`front`, `rear`, `size`) with `pthread_mutex_t`. Synchronizes producer-consumer flow with `pthread_cond_t` so consumer threads sleep when idle rather than burning CPU in busy-wait loops.
+- **Defensive Concurrency**: Wraps condition waits in `while` loops to protect against spurious wakeups; features a shutdown broadcast protocol to wake all blocked threads and drain memory cleanly.
+- **Verification**: Multi-threaded test harness simulating concurrent producers and consumers with checksum and count verification.
+- *Why it exists*: To confront race conditions, lock contention, and memory ordering bugs in multi-core execution firsthand.
+
+#### Experiments & Tooling
+
+| Repository | Stack | Scope & Key Mechanism |
+| :--- | :--- | :--- |
+| **[`llm-resource-mon`](https://github.com/akattri/llm-resource-mon)** | `Python` · `nvidia-smi` · `psutil` | Standalone telemetry probe sampling GPU compute load, VRAM allocation, and power draw (W) during local LLM inference (Ollama). Computes approximate energy consumption (J / Wh) and plots cold vs. warm start memory caching profiles. |
+| **[`github-issue-classifier`](https://github.com/akattri/github-issue-classifier)** | `Python` · `scikit-learn` · `NLTK` | Automated NLP pipeline for triaging GitHub issues. Fetches raw issues via GitHub REST API, cleans developer prose, and classifies security vs. non-security reports using TF-IDF n-grams and Multinomial Naive Bayes. |
+| **[`Archon`](https://github.com/akattri/Archon)** | `JavaScript` · `Manifest V3` · `OAuth 2.0` | Client-only browser productivity new-tab dashboard integrating Chrome bookmarks and Google Calendar agenda sync using event-driven background service workers and asynchronous local storage. |
+| **[`akattri.github.io`](https://akattri.github.io)** | `Hugo` · `Markdown` · `CSS` | Personal engineering notebook and academic portfolio documenting systems notes, coursework logs, and project retrospectives. |
 
 ---
 
-## Technical Focus
+### `/foundations`
+
+A deliberate progression emphasizing core computer science over framework churn:
+
+| Stage | Domain | Curriculum & Milestones | Status |
+| :---: | :--- | :--- | :--- |
+| `01` | **Low-Level Foundations** | Harvard CS50x · Linux Essentials<br>*(Manual memory management, pointers, linked lists, hash tables, tries, Linux FHS, shell scripting)* | `Completed` |
+| `02` | **Software Construction** | University of Helsinki Java Programming I & II<br>*(Object-oriented architecture, collection internals, defensive design, unit testing with JUnit)* | `Active` |
+| `03` | **Systems & Concurrency** | POSIX System Calls · Concurrency in C<br>*(Process lifecycles, virtual memory layouts, `pthreads`, mutexes, condition variables, Seashell)* | `Active` |
+| `04` | **Algorithms & Complexity** | Princeton University Algorithms, Part I & II *(Sedgewick & Wayne)*<br>*(Balanced search trees, graph algorithms, minimum spanning trees, network flow, intractability)* | `Queued` |
+| `05` | **Systems for Machine Learning** | Local inference telemetry · memory bottlenecks · applied NLP · systems research | `Exploring` |
+
+---
+
+### `/environment`
 
 ```
+OS / Kernel  : Linux (Fedora, Debian, Ubuntu) · POSIX
 Languages    : C (C99), Python, Java, Bash, SQL
-Environment  : Linux (Debian, Fedora, Ubuntu), GCC/Clang, Make, GDB, Valgrind, Neovim, Git
-Interests    : Operating Systems, Concurrency, Algorithms, Applied NLP, Systems for ML
+Toolchain    : GCC / Clang, GNU Make, GDB, Valgrind, Git, Neovim
+Focus        : Operating Systems, Concurrency Primitives, Algorithms, Systems for ML
 ```
 
 ---
 
-## Open Source & Academic Goals
+### `/notes`
 
-I am actively building the low-level systems, concurrency, and algorithmic foundation needed to contribute meaningfully to established open-source software and systems infrastructure. 
+> *"I like understanding what happens underneath the abstraction."*
 
-My longer-term goal is to pursue university research internships and open-source mentorship programs (such as Google Summer of Code and LFX Mentorship) centered on computer systems, operating systems, and systems for machine learning.
+Most of my computer science interests trace back to using Linux as a daily driver. Once you see the predictable modularity of Unix—small utilities communicating across pipes, processes arbitrated by kernel schedulers, and memory managed with precision—it becomes difficult to treat software as an opaque layer.
+
+I am intentionally spending my early university semesters building strong mental models of memory, processes, and synchronization before specializing in systems and machine learning.
+
+My longer-term goal is to pursue university research internships and open-source systems mentorship programs (such as Google Summer of Code and LFX Mentorship).
 
 ---
 
-## Links
-
-- **Website**: [akattri.github.io](https://akattri.github.io)
-- **GitHub**: [github.com/akattri](https://github.com/akattri)
-- **LinkedIn**: [linkedin.com/in/akattri](https://www.linkedin.com/in/akattri)
-- **Email**: [akashattri62@gmail.com](mailto:akashattri62@gmail.com)
-
-# akattri
+<p align="center">
+  <small>
+    <a href="https://akattri.github.io">akattri.github.io</a> &nbsp;•&nbsp;
+    <a href="https://github.com/akattri">github.com/akattri</a> &nbsp;•&nbsp;
+    <a href="https://www.linkedin.com/in/akattri">linkedin.com/in/akattri</a> &nbsp;•&nbsp;
+    <a href="mailto:akashattri62@gmail.com">akashattri62@gmail.com</a>
+  </small>
+</p>
