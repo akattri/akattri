@@ -1,4 +1,4 @@
-# Akash Attri
+# Akash
 
 **Computer Science undergraduate at SRM Institute of Science and Technology**  
 *Class of 2029 · Full-stack development, systems programming, and applied machine learning*
