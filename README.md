@@ -9,12 +9,15 @@ I’m interested in building software across the stack, from user-facing applica
 
 ## Featured work
 
-### Cogleaf
-**Full-stack application**
+### [Cogleaf](https://cogleaf.vercel.app/)
+**Full-stack application · Cognitive exercises · Offline-first**
 
-My primary product project. Cogleaf reflects my interest in designing and building a complete application, from its user experience through its underlying services.
+My primary product project: an offline-first cognitive exercise application featuring activities focused on attention, memory, and visual processing. Built with an emphasis on application architecture, usability, and accessible interaction.
 
-*The project is not currently open source. I plan to share more about its design and implementation as it develops.*
+### [Veto](https://microsoftedge.microsoft.com/addons/detail/veto-youtube-video-ac/mgenhkdhpgjfpdclndfnbaieojcikiol)
+**Browser extension · Microsoft Edge · YouTube access control**
+
+A browser extension for controlling access to YouTube videos and video content, available through the Microsoft Edge Add-ons store.
 
 ### [Seashell](https://github.com/akattri/seashell)
 **Unix shell · C99 · POSIX**
