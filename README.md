@@ -1,6 +1,6 @@
 # Akash
 
-Computer Science undergraduate at SRM Institute of Science and Technology, Ktr. I build software across application development, systems programming, and Linux.
+Computer Science undergraduate at SRM Institute of Science and Technology, Kattankulathur. I build software across application development, systems programming, and Linux.
 
 [Website](https://akattri.github.io) · [LinkedIn](https://www.linkedin.com/in/akattri) · [Email](mailto:akashattri62@gmail.com)
 
