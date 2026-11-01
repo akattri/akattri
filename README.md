@@ -42,7 +42,14 @@ A text-classification pipeline that uses TF-IDF features and a Multinomial Naive
 ### [Archon](https://github.com/akattri/Archon)
 **JavaScript · Chrome Extensions · Manifest V3**
 
-A browser new-tab dashboard combining bookmarks with a Google Calendar agenda.
+A browser new-tab dashboard combining bookmarks with Google Calendar agenda and Google Tasks.
+
+## Linux & Environment
+
+### [Dotfiles](https://github.com/akattri/dotfiles)
+**Linux · Niri · Wayland · Shell configuration · Fuzzel**
+
+My personal Linux configuration repository, covering desktop environment setup, window management, shell utilities, and system customization.
 
 ## Interests
 
