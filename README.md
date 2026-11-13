@@ -8,7 +8,7 @@ Computer Science undergraduate at SRM Institute of Science and Technology, Katta
 
 **Applications**
 
-- [Cogleaf](https://cogleaf.vercel.app/) — Offline-first cognitive exercise application focused on attention, memory, and visual processing.
+- Cogleaf (working title) — Contributing to the development of a privately developed cognitive support product. Further details are currently undisclosed.
 - [Veto](https://microsoftedge.microsoft.com/addons/detail/veto-youtube-video-ac/mgenhkdhpgjfpdclndfnbaieojcikiol) — Microsoft Edge extension for controlling access to YouTube videos and content.
 - [Archon](https://github.com/akattri/Archon) — Browser new-tab workspace integrating bookmarks, Google Calendar, and Google Tasks.
 
